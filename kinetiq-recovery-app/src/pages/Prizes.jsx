@@ -7,7 +7,6 @@ import PointsBadge from '../components/PointsBadge'
 import ProgressBar from '../components/ProgressBar'
 import Modal from '../components/Modal'
 import { prizes, generateClaimCode, addRedemption, getRedemptions, getPrizeById } from '../data/prizes'
-import { useGame } from '../context/GameContext'
 import Confetti from '../components/Confetti'
 
 export default function Prizes() {
