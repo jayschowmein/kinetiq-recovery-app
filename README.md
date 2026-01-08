@@ -191,3 +191,4 @@ Edit `src/data/rewards.js` to add or modify rewards and tiers.
 
 Built for KinetIQ Sports Nutrition sales promotion activity.
 "# kinetiq-recovery-app" 
+"# kinetiq-recovery-app-v2" 
