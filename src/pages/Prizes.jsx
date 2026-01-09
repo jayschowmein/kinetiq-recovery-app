@@ -1,18 +1,17 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useGame } from '../context/GameContext'
+import { useGame as useGameCtx } from '../context/GameContext'
 import Card from '../components/Card'
 import Button from '../components/Button'
 import PointsBadge from '../components/PointsBadge'
 import ProgressBar from '../components/ProgressBar'
 import Modal from '../components/Modal'
 import { prizes, generateClaimCode, addRedemption, getRedemptions, getPrizeById } from '../data/prizes'
-import { useGame } from '../context/GameContext'
 import Confetti from '../components/Confetti'
 
 export default function Prizes() {
   const navigate = useNavigate()
-  const { points, subtractPoints } = useGame()
+  const { points, subtractPoints } = useGameCtx()
   const [selectedPrize, setSelectedPrize] = useState(null)
   const [showConfirmModal, setShowConfirmModal] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
